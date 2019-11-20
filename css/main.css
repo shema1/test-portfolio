@@ -1,0 +1,678 @@
+
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('../fonts/museosanscyrl-100.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosanscyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/museosanscyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/museosanscyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosanscyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('../fonts/museosanscyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosanscyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/museosanscyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/museosanscyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosanscyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('../fonts/museosanscyrl-900.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosanscyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/museosanscyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/museosanscyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosanscyrl-900.svg#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: 900;
+}
+
+
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/Natasha.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+	font: 300 18px 'Museo Sans', sans-serif;
+	color: #3a3244;
+	padding: 0;
+	letter-spacing: 0.02em;
+	margin: 0;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	line-height: 1.45em;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	margin: 0 ;
+	padding: 0;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+
+.btn:hover {
+	box-shadow: 0 1px 10px rgba(0,0,0,0.8);
+}
+
+.btn:active {
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	line-height: 1.4em;
+	font-family: 'Natasha', sans-serif;
+
+}
+
+h2 {
+	font-size: 28px;
+    font-weight: 900;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.shadow{
+	box-shadow: 0 1px 54px rgba(0,0,0,0.25);
+}
+
+/*---Первая секция---*/
+
+.header	{
+	background: url(../img/header.jpg) no-repeat top center/cover;
+	padding: 50px 0 80px 0px;
+}
+
+.main-nav {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-nav__logo{
+	text-transform: uppercase;
+	font-family: 'Museo Sans 100', sans-serif;
+	font-size: 17px;
+}
+
+.main-nav__logo_weight{
+	font-weight:900 ;
+}
+
+.main-nav__menu{
+	width: 330px;
+	justify-content: space-between;
+}
+
+.main-nav__element {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.main-nav__email{
+	font-size: 13px;
+	border-bottom: 1px solid #666763;
+}
+
+.main-nav__email:hover{
+	border-bottom: transparent;
+}
+
+.main-info{
+	text-align: center;
+	color: #fff;
+	margin: 280px 0 257px 0;
+	letter-spacing: 0.3em;
+}
+
+.main-info__title{
+	font-size: 49px;
+	letter-spacing: 0.125em;
+}
+
+.main-info__subtitle{
+	font-size: 29px;
+	font-family: 'Museo Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	margin-top: 5px;
+	letter-spacing: 0.125em;
+}
+
+.arrow{
+	font-family: Arial, sans-serif;
+	color: #fff;
+	font-size: 18px;
+	border: 1px solid #fff;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 100px;
+	margin: 0 auto;	
+	display: block;
+}
+
+/* ------ Вторая секция ------ */
+
+.info{
+	padding: 75px 0 80px 0 ;
+}
+
+.about-title{
+	font-size: 37px;
+	letter-spacing: 0.12em;
+}
+
+.general-info {
+	margin: 60px 0 0;
+}
+
+.background{
+	width: 440px;
+}
+
+.title{
+	color: #888886;
+	font-size: 22px;
+	letter-spacing: 0.12em;
+}
+
+.background__text{
+	font-size: 15px;
+	margin-top: 35px
+}
+
+.background__description{
+	margin-bottom: 27px;
+	font-size: 15px;
+	line-height: 1.8;
+	letter-spacing: 0.02em
+}
+
+.background__description:last-child{
+	margin: 0;
+}
+
+.projects{
+	width: 460px;
+}
+
+.merit__figures{
+	margin: 55px 0 65px 0px;
+	justify-content: space-around;
+}
+
+.merit__element{
+	width: 115px;
+}
+
+.merit__block{
+	width: 74px;
+	height: 74px;
+	border: 1px solid #3e6534;
+    transform: rotate(45deg);
+    text-align: center;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.merit__block:after{
+	content:'';
+	width: 58px;
+	height: 58px;
+	border: 1px solid #cddbc3;
+	display: block;
+	position: absolute;
+}
+
+.merit__numbers{
+	transform: rotate(-45deg);
+	line-height: 70px;
+	text-align: center;
+	display: block;
+}
+
+.merit__text{
+	color: #000;
+	font-size: 12px;
+	font-weight: 100;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	margin: 40px 0 0px 0px;
+}
+
+.links{
+	margin-top: 25px;
+}
+
+.links__menu{
+	width: 170px
+}
+
+
+.links__social{
+	margin-top: 12px;
+}
+
+.links__social:first-child{
+	margin: 0;
+}
+
+.links__element{
+	border-bottom: 1px solid  #3e6534;
+	font-size: 14px;
+	font-weight: 300;
+	text-decoration: none;
+	color: #3e6534;
+	padding-bottom: 3px;
+	letter-spacing: 0.12em;
+}
+
+.link__user{
+	align-items: center;
+	width: 250px;
+}
+
+.link__icon{
+	width: 64px;
+	height: 64px;
+	background: #eef1ed;
+	border-radius: 100px;
+	text-align: center;
+	line-height: 60px;
+	color: #204d15;
+	font-size: 25px;
+}
+
+.link__text{
+	font-size: 13px;
+	color: #a2a2a0;
+	margin-left: 25px;
+	font-style: italic;
+}
+
+/* ------ Третья секция ------ */
+
+.opportunities{
+	padding-bottom: 75px;
+}
+
+.section-title{
+	font-size: 37px;
+	letter-spacing: 0.12em;
+}
+
+.skill{
+	margin-top: 51px;
+}
+
+.skill__element{
+	align-items: center;
+	width: 210px;
+}
+
+.skill__circle{
+	border: 1px solid #3e6534;
+	width: 61px;
+	height: 61px;
+	border-radius: 100px;
+	text-align: center;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill__circle:after{
+	content:'';
+	border: 1px solid #adb2ac;
+	width: 49px;
+	height: 49px;
+	border-radius: 100px;
+	display: block;
+	position: absolute;
+}
+
+.skill__percentage{
+	line-height: 60px;
+	font-weight: 100;
+	font-size: 13px;
+	padding-left: 5px;
+}
+
+.skill__title{
+	margin-left: 26px;
+	font-size: 15px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #4b4c47;
+	font-family: 'Museo Sans 900', sans-serif;
+}
+
+/* ------ Четвертая секция ------ */
+
+.works{
+	padding-bottom: 116px;
+}
+
+.pictures{
+	margin-top: 48px;
+}
+
+.pictures__block{
+	position: relative;
+}
+
+.pictures__overlay{
+	background: rgba(0,0,0,0.56);
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 98%;
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+}
+
+.pictures__block:hover .pictures__overlay{
+	visibility: visible;
+	opacity: 1;
+}
+
+.pictures__title{
+	font-family: 'Museo Sans', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.pictures__link{
+	border-bottom: 1px solid #fff;
+	font-size: 13px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.pictures__link:hover{
+	border: transparent;
+}
+
+/* ------ Пятая секция ------ */
+
+.footer	{
+ padding-bottom: 110px;
+}
+
+.info__year{
+	font-size: 11px;
+	color: #888886;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+}
+
+
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	
+	h2,h3{
+		text-align: center;
+	}
+
+	.container{
+		width: 700px;
+	}
+	
+	.main-info{
+		margin: 100px 0;
+	}
+
+	.main-nav__menu{
+		display: none;
+	}
+
+	.info{
+		padding:20px 0 30px;
+	}
+
+	.general-info{
+		margin-top: 0;
+		flex-direction: column;
+	}
+	
+	.title{
+		margin-top: 20px;
+	}
+
+	.background{
+		width: auto;
+	}
+
+	.projects{
+		width: auto;
+		justify-content: space-around;
+	}
+
+	.links{
+		justify-content: space-around;
+	}
+
+	.link__icon{
+		margin-top: 30px;
+	}
+	
+	.img{
+		max-width: 100%;
+	}
+
+	.skill{
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 0;
+
+	}
+
+	.skill__element{
+		flex-basis: 38%;
+		margin-top: 15px;
+	}	
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 520px;
+		margin: 0 auto;
+	}
+
+	.main-nav{
+		flex-direction: column;
+	}
+
+	.main-nav__menu{
+		display: none;
+	}
+	
+	.main-nav__email{
+		margin-top: 15px;
+	}
+
+	.general-info{
+		flex-direction: column;
+	}
+
+	.links{
+		flex-direction: row;
+	}
+	
+	.link__icon{
+		margin: 0;
+	}
+
+	.pictures{
+		flex-direction: column;
+	}
+
+	.pictures__block{
+		margin-top: 10px;
+	}
+
+	.img{
+		width: 100%;
+	}
+	
+	.pictures{
+		flex-direction: column;
+	}
+
+	.info__year{
+		text-align: center;
+	}
+	
+	.works{
+		padding-bottom: 30px;
+	}
+
+	.footer{
+		padding-bottom: 30px
+	}
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	.header{
+		padding-bottom: 40px;
+	}
+
+	.main-info__title{
+		font-size: 35px;
+	}
+
+	.main-info{
+		margin: 50px 0;
+	}
+
+	.main-info__subtitle{
+		font-size: 22px;
+	}
+
+	.section-title{
+		font-size: 29px;
+	}
+
+	.title{
+		font-size: 20px;
+	}
+	
+	.container {
+		width: 90%;
+	}
+
+	.merit__figures{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0;
+	}
+
+	.links{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.links__menu{
+		text-align: center;
+	}
+
+	.section-title{
+		margin:20px 0 20px;
+	}
+
+	.link__user{
+		margin-top: 20px;
+	}
+
+	.figures__element{
+		display: flex;
+	}
+
+	.merit__element{
+		margin-top: 30px;
+	}
+
+	.skill{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.opportunities{
+		padding-bottom: 20px;
+	}
+}
+
+
+
+
+
+
+
